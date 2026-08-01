@@ -1,0 +1,25 @@
+                    +----------------------+
+                    |     Arduino Uno      |
+                    |                      |
+        D2  --------| TRIG (HC-SR04)       |
+        D3  --------| ECHO (HC-SR04)       |
+        D5  --------| Servo 1 (Wet Bin)    |
+        D6  --------| Servo 2 (Dry Bin)    |
+        D7  --------| Servo 3 (Metal Bin)  |
+        D8  --------| Buzzer               |
+        D9  --------| Green LED            |
+       D10  --------| Yellow LED           |
+       D11  --------| Red LED              |
+        A4  --------| OLED SDA             |
+        A5  --------| OLED SCL             |
+        5V  --------| VCC                  |
+       GND  --------| GND                  |
+                    +----------------------+
+                           |
+          -----------------------------------------
+          |         |          |        |         |
+      HC-SR04    OLED      Servos     LEDs    Buzzer
+          |         |          |        |         |
+         5V        5V         5V       5V        5V
+          |         |          |        |         |
+         GND------- GND ------ GND ---- GND ----- GND
