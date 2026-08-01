@@ -1,0 +1,82 @@
+PROJECT JOURNAL
+
+Project Title
+
+AI Smart Waste Segregation Robot
+
+Introduction
+
+The AI Smart Waste Segregation Robot is an Arduino-based educational prototype designed to demonstrate automatic waste sorting using sensors, servo motors, and embedded systems. The project aims to promote environmental awareness and introduce students to robotics and automation.
+
+---
+
+Project Planning
+
+The project began by identifying the problem of improper waste segregation. After researching existing waste management methods, an Arduino-based prototype was selected because it is affordable, easy to understand, and suitable for educational purposes. The project objectives, component list, and system workflow were planned before construction.
+
+---
+
+Materials Used
+
+The prototype was designed using an Arduino Uno, an HC-SR04 ultrasonic sensor, three SG90 servo motors, an OLED display, LEDs, a buzzer, jumper wires, resistors, a breadboard, a 5V power supply, and three model waste bins.
+
+---
+
+Circuit Design
+
+A circuit diagram was prepared before assembling the hardware. Each component was assigned to the appropriate Arduino pin, and the wiring layout was organized to ensure reliable connections and easy maintenance.
+
+---
+
+Hardware Assembly
+
+All components were mounted on the project base. The ultrasonic sensor, servo motors, OLED display, LEDs, and buzzer were connected to the Arduino according to the circuit diagram. The wiring was arranged neatly for a clean and organized appearance.
+
+---
+
+Programming
+
+The Arduino program was developed to detect an object using the ultrasonic sensor and operate the servo motors according to the programmed demonstration logic. The OLED display was programmed to show the current system status, while the LEDs and buzzer provided visual and audible feedback.
+
+---
+
+Testing
+
+Each component was tested individually before the complete system was evaluated. The ultrasonic sensor successfully detected objects within the configured range, the servo motors responded correctly to the programmed commands, and the display and indicators operated as expected.
+
+---
+
+Observations
+
+The prototype demonstrated automatic object detection and sorting. Stable power connections and proper sensor calibration improved overall performance. Organizing the wiring also made the system easier to troubleshoot and present.
+
+---
+
+Result
+
+The AI Smart Waste Segregation Robot successfully demonstrated an automated waste sorting process for educational purposes. The prototype showed how sensors, servo motors, and an Arduino can work together to perform a simple automated task.
+
+---
+
+Skills Learned
+
+- Arduino Programming
+- Embedded Systems
+- Sensor Interfacing
+- Servo Motor Control
+- Electronics Assembly
+- Circuit Design
+- Problem Solving
+- Technical Documentation
+
+---
+
+Future Improvements
+
+Future versions of the project may include AI-based image recognition, IoT connectivity, cloud data logging, automatic bin-level monitoring, and a mobile application for remote monitoring.
+
+---
+
+Conclusion
+
+The AI Smart Waste Segregation Robot is a practical educational prototype that demonstrates automation and embedded systems in waste management. The project helped develop knowledge of electronics, programming, and robotics while promoting awareness of proper waste segregation and environmental sustainability.
