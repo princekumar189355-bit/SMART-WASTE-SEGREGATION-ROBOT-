@@ -1,0 +1,60 @@
+#include <Servo.h>
+
+Servo sorter;
+
+// Pins
+const int trigPin = 2;
+const int echoPin = 3;
+const int servoPin = 5;
+const int buzzerPin = 8;
+const int ledPin = 9;
+
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+
+  sorter.attach(servoPin);
+  sorter.write(90);   // Center position
+
+  Serial.begin(9600);
+}
+
+void loop() {
+  long duration;
+  float distance;
+
+  // Measure distance
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  duration = pulseIn(echoPin, HIGH);
+  distance = duration * 0.034 / 2;
+
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+
+  if (distance > 0 && distance < 15) {
+    digitalWrite(ledPin, HIGH);
+    tone(buzzerPin, 1000);
+
+    // Demonstration: move servo
+    sorter.write(30);
+    delay(1000);
+    sorter.write(150);
+    delay(1000);
+    sorter.write(90);
+
+    noTone(buzzerPin);
+  } else {
+    digitalWrite(ledPin, LOW);
+    noTone(buzzerPin);
+  }
+
+  delay(200);
+}
