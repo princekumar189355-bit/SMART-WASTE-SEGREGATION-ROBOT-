@@ -1,0 +1,33 @@
+Bill of Materials (BOM)
+
+Project Title
+
+Smart Waste Segregation Robot
+
+S.No.| Component| Specification| Quantity| Approx. Cost (₹)
+1| Arduino Uno R3| ATmega328P| 1| 550
+2| HC-SR04 Ultrasonic Sensor| Distance Measurement| 1| 100
+3| SG90 Servo Motor| 180° Micro Servo| 3| 540
+4| 0.96" OLED Display| I2C 128×64| 1| 250
+5| Active Buzzer| 5V| 1| 40
+6| Red LED| 5mm| 1| 10
+7| Yellow LED| 5mm| 1| 10
+8| Green LED| 5mm| 1| 10
+9| 220Ω Resistors| Carbon Film| 3| 15
+10| Breadboard| 400 Tie Points| 1| 120
+11| Jumper Wires| Male-to-Male Set| 30| 150
+12| Robot Chassis/Base| Acrylic or Plastic| 1| 400
+13| Waste Bins| Biodegradable, Recyclable, Non-Recyclable| 3| 300
+14| USB Cable| Type-A to Type-B| 1| 120
+15| 5V Power Supply| Adapter or Power Bank| 1| 250
+16| Mounting Hardware| Screws, Nuts & Spacers| 1 Set| 100
+
+Estimated Total Cost
+
+₹2,975 (Approx.)
+
+Notes
+
+- Prices are approximate and may vary by supplier.
+- For reliable servo operation, consider using a separate regulated 5V power supply and connect its ground to the Arduino ground.
+- This BOM is intended for the Arduino-based educational prototype version of the Smart Waste Segregation Robot.
