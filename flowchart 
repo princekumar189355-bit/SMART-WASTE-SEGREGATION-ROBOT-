@@ -1,0 +1,40 @@
+                    START
+                      │
+                      ▼
+             Power ON Arduino
+                      │
+                      ▼
+      Initialize Sensors, OLED & Servos
+                      │
+                      ▼
+         Display "System Ready"
+                      │
+                      ▼
+      Is an Object Detected by Sensor?
+               ┌───────────────┐
+          No   │               │ Yes
+               ▼               ▼
+        Keep Scanning     Read Sensor Data
+               │               │
+               │               ▼
+               │      Process Detection Logic
+               │               │
+               │               ▼
+               │      Move Servo to Selected Bin
+               │               │
+               │               ▼
+               │     Display "Waste Sorted"
+               │               │
+               │               ▼
+               │     Beep Buzzer & Blink LED
+               │               │
+               │               ▼
+               │     Return Servo to Home
+               │               │
+               └───────◄───────┘
+                      │
+                      ▼
+              Wait for Next Object
+                      │
+                      ▼
+                     END
