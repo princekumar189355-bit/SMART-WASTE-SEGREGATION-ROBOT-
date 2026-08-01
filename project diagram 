@@ -1,0 +1,34 @@
+                    SMART WASTE SEGREGATION ROBOT
+
+                    +----------------------+
+                    |   Waste Object       |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    | HC-SR04 Ultrasonic   |
+                    |      Sensor          |
+                    +----------+-----------+
+                               |
+                               v
+                    +----------------------+
+                    |    Arduino Uno R3    |
+                    |   (Main Controller)  |
+                    +----+----+----+-------+
+                         |    |    |
+                         |    |    |
+            +------------+    |    +----------------+
+            |                 |                     |
+            v                 v                     v
+     +------------+    +-------------+     +----------------+
+     | Servo      |    | OLED Display|     | LEDs & Buzzer  |
+     | Motors     |    | System Info |     | Status Alert   |
+     +------+-----+    +-------------+     +----------------+
+            |
+            v
+     +-------------------------------+
+     | Waste Directed to Bin         |
+     | • Wet Waste                   |
+     | • Dry Waste                   |
+     | • Metal/Other (Demo Bin)      |
+     +-------------------------------+
