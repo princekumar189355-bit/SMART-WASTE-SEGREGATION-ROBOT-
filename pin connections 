@@ -1,0 +1,35 @@
+Pin Connections
+
+Component| Arduino Uno Pin
+HC-SR04 TRIG| D2
+HC-SR04 ECHO| D3
+Servo Motor 1| D5
+Servo Motor 2| D6
+Servo Motor 3| D7
+Active Buzzer| D8
+Green LED| D9
+Yellow LED| D10
+Red LED| D11
+OLED Display SDA| A4
+OLED Display SCL| A5
+OLED Display VCC| 5V
+OLED Display GND| GND
+Ultrasonic Sensor VCC| 5V
+Ultrasonic Sensor GND| GND
+Servo Motors VCC| 5V*
+Servo Motors GND| GND
+LEDs (-)| GND through 220Ω resistors
+Buzzer (-)| GND
+
+Power Connections
+
+- Arduino 5V → OLED VCC, Ultrasonic Sensor VCC
+- Arduino GND → Common Ground for all components
+- Servo motors should preferably use a separate regulated 5V power supply for reliable operation. Connect the external power supply GND to the Arduino GND (common ground).
+
+Note
+
+- Double-check all wiring before powering the circuit.
+- Ensure all grounds are connected together (common ground).
+- Use 220Ω resistors with each LED to limit current.
+- Keep wiring neat and secure to improve reliability and presentation.
